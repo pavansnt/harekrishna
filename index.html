@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Playlist Generator</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <h1>Musify</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h1>Music Playlist Generator</h1>
+            <br>
+
+            <label for="mood">Select your mood:</label>
+            <select id="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="energetic">Energetic</option>
+                <option value="calm">Calm</option>
+            </select>
+
+            <label for="genre">Select your favorite genre:</label>
+            <select id="genre">
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="hiphop">Hip Hop</option>
+                <option value="electronic">Electronic</option>
+            </select>
+
+            <button onclick="generatePlaylist()">Generate Playlist</button>
+
+            <ul id="playlist"></ul>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
